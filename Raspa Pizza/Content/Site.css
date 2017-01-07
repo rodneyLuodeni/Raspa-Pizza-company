@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Lato', 'Open Sans', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +22,106 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*  ----------------------------------------------------------------------------
+    ------------------------------- Header Styles ------------------------------
+    ---------------------------------------------------------------------------- */
+
+    .WhiteHeaderWrapper {
+        background-color: white;
+    }
+
+    .navbar, .navbar-header {
+        border-radius: 0;
+    }
+
+    .navbar-inverse {
+        background-color: #990016;
+        color: white;
+    }
+
+    ul.login-nav {
+        text-align: right;
+        margin: 0px -10px 0px 0px;
+        padding: 0;
+    }
+
+    ul.login-nav > li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    ul.login-nav > li:hover {
+        background-color:  #e5e5e5;
+    }
+
+    ul.login-nav > li > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #148f6a;
+
+    }
+
+
+    @media (max-width: 768px) {
+        ul.login-nav > li {
+            display: block;
+            width: 100%;
+        }
+
+        ul.login-nav {
+            text-align: center;
+
+        }
+    }
+
+
+
+
+
+
+    /* Start of red navbar */
+
+    .active {
+        background-color:  #148f6a;
+        display: block;
+    }
+
+
+    .navbar-inverse {
+        border-left: none;
+        border-right: none;
+        border-color:   #841C21;
+        margin-bottom: 0;
+    }
+
+
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        background-color: #841C21;
+    }
+
+    .navbar-nav > li > a.active:hover {
+            background-color:  #117758;    
+    }
+
+
+    .navbar-inverse .navbar-brand {
+        color: white
+    }
+
+
+
+
+
+
+/*  ----------------------------------------------------------------------------
+    ------------------------------- CONTENT AREA -------------------------------
+    ---------------------------------------------------------------------------- */

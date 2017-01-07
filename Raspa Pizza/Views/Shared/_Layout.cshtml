@@ -3,42 +3,75 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Raspa Pizza</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <body>
+    <!-- most top bar for logging in/out-->
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <section class="row">
+            <div class="col-md-12">
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+        </section>
+        </div>
+
+        <div class="navbar navbar-inverse ">
+            <div class="container">
+                <nav class="row">
+                    <div class="navbar-header navbar-inverse">
+                    
+                        <!-- Hamburger menu-->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <!-- Show logo on the MD and LG screens, Text on SM / XS-->
+                        <div style="position: absolute; top: -40px;" class="hidden-sm hidden-xs">
+                            <img src="~/Content/Images/Static/logo.png" alt="Raspa Pizza" width="130"/>
+                        </div>
+
+                        <div class="hidden-md hidden-lg">
+                            @Html.ActionLink("Raspa Pizza", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+                        </div>
+
+                    </div>
+        
+        
+                    <div class="navbar-collapse collapse col-md-10 col-md-offset-2">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Pizza", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Sides", "About", "Home")</li>
+                            <li>@Html.ActionLink("Salads", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Drinks", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Desserts", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Meals", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Bestel Online", "Contact", "Home", "", new { @class = "active" })</li>
+                        </ul>
+
+
+                    </div>
+                </nav>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr/>
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</body>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
 </html>
