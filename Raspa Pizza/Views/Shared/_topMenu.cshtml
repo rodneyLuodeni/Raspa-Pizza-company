@@ -1,0 +1,31 @@
+﻿<div class="navbar-header navbar-inverse">
+    <!-- Hamburger menu-->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <!-- Show logo on the MD and LG screens, Text on SM / XS-->
+    <div class="hidden-sm hidden-xs logoPositioner">
+        <img src="~/Content/Images/Static/logo.png" alt="Raspa Pizza" width="160" />
+    </div>
+
+    <div class="hidden-md hidden-lg">
+        @Html.ActionLink("Raspa Pizza", "Index", "Home", new {area = ""}, new {@class = "navbar-brand marginTop2Px"})
+    </div>
+
+</div>
+
+
+<div class="navbar-collapse collapse col-md-10 col-md-offset-2">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Pizza", "Index", "Home")</li>
+        <li>@Html.ActionLink("Sides", "About", "Home")</li>
+        <li>@Html.ActionLink("Salads", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Drinks", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Desserts", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Meals", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Bestel Online", "Contact", "Home", "", new { @class = "active" })</li>
+    </ul>
+</div>

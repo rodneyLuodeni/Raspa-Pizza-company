@@ -97,6 +97,11 @@ textarea {
         margin-bottom: 0;
     }
 
+    .logoPositioner {
+        position: absolute; 
+        top: -55px;
+    }
+
 
 
     .navbar-inverse .navbar-nav > li > a {
@@ -117,6 +122,11 @@ textarea {
         color: white
     }
 
+    .marginTop2Px {
+        display: block;
+        margin-top: -2px;
+    }
+
 
 
 
@@ -125,3 +135,14 @@ textarea {
 /*  ----------------------------------------------------------------------------
     ------------------------------- CONTENT AREA -------------------------------
     ---------------------------------------------------------------------------- */
+
+
+.carousel-indicators li {
+    border-color: #148f6a;
+
+}
+
+.carousel-indicators .active {
+    background-color: #148f6a;
+}
+
