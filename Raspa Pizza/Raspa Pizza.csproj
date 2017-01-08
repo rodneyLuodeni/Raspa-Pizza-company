@@ -210,6 +210,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Dynamic\Articles\item2-3.jpg" />
+    <Content Include="Content\Images\Dynamic\Articles\item1.jpg" />
+    <Content Include="Content\Images\Dynamic\Articles\item2-1.jpg" />
+    <Content Include="Content\Images\Dynamic\Articles\item2-2.jpg" />
+    <Content Include="Content\Images\Dynamic\Articles\item2.jpg" />
+    <Content Include="Content\Images\Dynamic\Articles\item3.jpg" />
     <Content Include="Content\Images\Dynamic\header\pizzaHeader1.jpg" />
     <Content Include="Content\Images\Dynamic\header\pizzaHeader2.jpg" />
     <Content Include="Content\Images\Static\logo.png" />
